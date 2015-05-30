@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background"
+        android:dither="true"
+        android:drawable="@drawable/img_seekbar_bg" >
+        <!-- <nine-patch
+            android:dither="true"
+            android:src="@drawable/img_seekbar_bg" /> -->
+    </item>
+    <item android:id="@android:id/progress">
+        <clip
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:clipOrientation="horizontal"
+            android:gravity="left"
+            android:dither="true"
+            android:drawable="@drawable/move_scroll" >
+            <!-- <nine-patch
+                android:dither="true"
+                android:src="@drawable/move_scroll" /> -->
+        </clip>
+       
+    </item>
+
+</layer-list>

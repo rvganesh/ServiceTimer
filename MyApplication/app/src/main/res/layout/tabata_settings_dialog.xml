@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dialog_height"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog" >
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_nav" >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tabata"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/text_size_16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/result_bg"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_14sp" />
+        
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/listTabataSettings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:footerDividersEnabled="false"
+        android:fadingEdge="none" >
+                    
+    </ListView>
+
+</LinearLayout>

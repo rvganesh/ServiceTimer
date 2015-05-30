@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dialog_height"
+    android:background="@drawable/bg_dialog" >
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:background="@drawable/top_nav" >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/settings"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/text_size_16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/doneBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:paddingBottom="2dp"
+            android:textSize="@dimen/text_size_14sp"
+            android:background="@drawable/result_bg"
+            android:text="@string/done" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:orientation="vertical"
+        android:padding="@dimen/padding10dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/general"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size_16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding10dp"
+            android:background="@drawable/background_rounded_white_settings"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/aboutLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/about"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/disclosure_dialog" />
+                
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#5A5A5A" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/emailSupportText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding10dp"
+                android:text="@string/emaisupport"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_size_14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#5A5A5A" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/rate4Time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding10dp"
+                android:text="@string/rate4time"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_size_14sp"
+                android:textStyle="bold" />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#5A5A5A" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/txtArmory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding10dp"
+                android:text="@string/armories"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_size_14sp"
+                android:textStyle="bold" />
+            
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/timers"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size_16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding10dp"
+            android:background="@drawable/background_rounded_white_settings"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/preparationTimeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/preparationtime"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/preparationTimeSec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/secs"
+                    android:textColor="#AED03E"
+                    android:textSize="@dimen/text_size_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#5A5A5A" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:id="@+id/timerVolume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding10dp" >
+
+                <TextView
+                    android:id="@+id/volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/timervloume"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/volumeSeekBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                   
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:progress="40"
+                    android:layout_toRightOf="@+id/volume"
+                    android:layout_alignParentRight="true"                  
+                    android:progressDrawable="@drawable/seekbar_progress"
+                    android:thumb="@drawable/seek_handler" />
+                
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

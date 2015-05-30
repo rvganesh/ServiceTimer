@@ -1,0 +1,17 @@
+<resources>
+
+   <style name="SampleTheme" parent="android:Theme">
+        <item name="numberPickerStyle">@style/NPWidget.Holo.NumberPicker</item>
+    </style>
+    
+     <style name="MyColorDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@color/panel_color</item>
+    </style>
+
+   <!--  <style name="SampleTheme.Light" parent="android:Theme.Light">
+        <item name="numberPickerStyle">@style/NPWidget.Holo.Light.NumberPicker</item>
+        <item name="android:windowBackground">@color/panel_color</item>     
+    </style> -->
+
+  
+</resources>
